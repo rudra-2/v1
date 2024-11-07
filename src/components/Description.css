@@ -1,0 +1,124 @@
+.description {
+  background-color: #D8F7FF;
+  padding: 10px;
+  text-align: center;
+  font-size: 5vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start; /* Aligns items at the top */
+  text-align: left;
+  gap: 20px; /* Adds space between elements */
+}
+
+/* Ensuring the how-box has a defined width */
+.how-box {
+  width: 30%;
+  margin-top: 7%;
+  padding: 30px;
+  border: 5px solid black;
+  border-radius: 10px;
+  box-shadow: 15px 15px 0px rgba(0, 0, 0, 1);
+  font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+  text-align: center;
+  background-color: white;
+}
+
+.how-box h1 {
+  margin-top: 0;
+}
+
+.p1img {
+  margin-top: 10%;
+}
+
+.p1img img {
+  width: 70%;
+  height: auto;
+}
+
+/* How-text styles */
+.how-text {
+  flex: 1;
+  max-width: 600px;
+  font-size: 1rem;
+  padding: 10px;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+.how-text h1 {
+  font-weight: 900;
+}
+
+.how-text p {
+  font-size: 21px;
+  font-weight: 100;
+  line-height: 1.5em;
+}
+
+/* Responsive Design Adjustments */
+
+/* Medium-sized screens, like tablets */
+@media (max-width: 1024px) {
+  .how-box {
+    width: 40%; /* Adjusts box size on medium screens */
+  }
+
+  .how-text {
+    width: 55%;
+    font-size: 0.9rem;
+  }
+
+}
+
+/* Small screens, like mobile */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack elements vertically on small screens */
+    align-items: center; /* Center aligns items */
+  }
+
+  .how-box {
+    width: 80%;
+    margin-top: 15%;
+    padding: 4vw;
+    border: 0.5vw solid black;
+    border-radius: 1vw;
+    box-shadow: 1.8vw 1.8vw 0px rgba(0, 0, 0, 1);
+    font-size: 5vw;
+    max-width: 90vw;
+  }
+
+  .p1img img {
+    width: 50vw;
+  }
+
+  .how-text {
+    width: 95%;
+    margin-top: 2vw;
+    font-weight: 300;
+    margin-left: 2vw;
+    line-height: 1.5em;
+    font-size: smaller;
+  }
+
+  .how-text h1 {
+    font-size: 5vw;
+    font-weight: 900;
+    padding: 0.3vw;
+    margin-top: 6vw;
+  }
+
+  .how-text p {
+    font-size: 4vw;
+    font-weight: 200;
+  }
+}

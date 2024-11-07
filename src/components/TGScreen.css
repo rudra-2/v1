@@ -1,0 +1,81 @@
+.TGScreen {
+    background-color: #D8F7FF;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.8vw;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .TGScreen h1 {
+    font-weight: 900;
+    margin-bottom: 20px;
+    width: 100%
+  }
+  
+  .tgss {
+    position: relative;
+    display: inline-block;
+    width: fit-content;
+  }
+  
+  .first-image {
+    width: 50vw; /* Scale with viewport width for responsiveness */
+    max-width: 380px; /* Set a max-width to prevent excessive scaling */
+    height: auto;
+    z-index: 1;
+    position: relative;
+    margin-left: -20em;
+    z-index: 2;
+  }
+  
+  .second-image,
+  .third-image {
+    width: 50vw; /* Same scaling as first image */
+    max-width: 380px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    transform: translateX(-100%); /* Initially hidden to the left */
+    opacity: 0;
+    transition: transform 0.8s ease, opacity 0.8s ease;
+  }
+  
+  .second-image.animate-right {
+    transform: translate(-40%);
+    opacity: 1;
+    z-index: 1;
+  }
+  
+  .third-image.animate-right {
+    transform: translate(15%); /* Slide further right and slightly lower */
+    opacity: 1;
+    z-index: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .first-image,
+    .second-image,
+    .third-image {
+      width: 50vw; /* Scale up images on smaller screens */
+      max-width: 200px;
+        margin-left: -45vw;
+    }
+    .first-image{
+        z-index: 2;
+    }
+    .second-image{
+        z-index: 1;
+    }
+    .second-image.animate-right {
+      transform: translate(40%);
+    }
+  
+    .third-image.animate-right {
+      transform: translate(85%);
+    }
+    .TGScreen h1 {
+        font-size: x-large;
+      }
+  }
+  
