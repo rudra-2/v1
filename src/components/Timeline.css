@@ -15,7 +15,8 @@
 .pth1 {
   font-weight: 900;
   margin-left: -70%;
-  font-size: 40px; /* Adjust font size for better visibility */
+  font-family: 'Angradir', sans-serif;
+  font-size: 45px; /* Adjust font size for better visibility */
 }
 
 .white-box {

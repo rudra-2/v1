@@ -14,12 +14,14 @@
     margin-top: 5%;
     margin-right: auto;
     margin-left: auto;
-    padding: 30px; /* Fixed padding for larger screens */
+    padding: 40px; /* Fixed padding for larger screens */
     border: 5px solid black; /* Fixed border thickness for larger screens */
     border-radius: 10px; /* Fixed border radius for larger screens */
     box-shadow: 15px 15px 0px rgba(0, 0, 0, 1); /* Fixed shadow for larger screens */
-    font-weight: 900; /* Very bold font */
-    width: 80%; /* Fixed width for larger screens */
+    font-family: 'Angradir', sans-serif; /* Very bold font */
+    font-weight: 900;
+    font-size: 70px;
+    width: 70%; /* Fixed width for larger screens */
     max-width: 1500px; /* Maximum width for larger screens */
     background-color: white;
   }
@@ -68,8 +70,8 @@
     width: 25%;
     height: 100px;
     color: black;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 900;
+    font-family: 'Angradir', sans-serif;
+    font-weight: 800;
     font-size: 70%;
   }
   

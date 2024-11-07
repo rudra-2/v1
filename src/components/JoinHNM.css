@@ -22,6 +22,8 @@
 /* Title styling */
 .join-box h1 {
   font-size: 60px;
+  font-family: 'Angradir', sans-serif;
+  padding-bottom: 20px;
   font-weight: 900;
   margin: 0 auto 10px auto; /* Centers the title and adds bottom margin */
 }
@@ -40,6 +42,8 @@
   margin-top: 5%;
   padding: 20px;
   line-height: 1.4;
+  font-family: 'Angradir', sans-serif;
+  font-weight: 700;
   text-align: center;
 }
 

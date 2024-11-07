@@ -7,7 +7,7 @@ const ProfileAnima: React.FC = () => {
       <br />
       <div className='content-container'>
         <div className='whyhmn'>
-          <h1>Why HUMAN?</h1>
+          <h1>Why &nbsp;HUMAN?</h1>
           <p>
             HUMAN is a social network where your
             predictions shape the conversation. <br /> <br />
