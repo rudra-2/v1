@@ -215,6 +215,11 @@ ul.timeline .content > li::before {
    
   }
 }
+@media screen and (max-width: 981px) {
+    .pth1{
+      margin-left: -50%;
+    }
+}
 
 @keyframes float1 {
   0% {
