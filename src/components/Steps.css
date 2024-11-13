@@ -1,3 +1,4 @@
+/* Steps.css */
 .steps {
     background-color: #FFDFCD;
     padding: 20px;
@@ -5,25 +6,25 @@
     padding-left: 8vw;
     padding-top: 5%;
     padding-bottom: 8%;
-}
-
-.steps h1 {
+  }
+  
+  .steps h1 {
     font-weight: 900;
     margin-bottom: 50px;
     font-family: 'Angradir', sans-serif;
     font-size: 60px;
-}
-
-.step-container {
+  }
+  
+  .step-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px; /* Gap between boxes */
     margin-left: -15%;
     margin-right: auto;
-}
-
-.step-box {
+  }
+  
+  .step-box {
     background-color: white;
     padding: 10px;
     border: 2px solid #000;
@@ -35,103 +36,127 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.step-box img {
+    transform-origin: top left; /* Set the origin for the swing animation */
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  
+  .step-box img {
     width: 70%; /* Adjusted size */
     height: auto;
     margin-bottom: 15px;
     padding-top: 10%;
-}
-
-.step-box p {
+  }
+  
+  .step-box p {
     font-size: 1rem;
     font-weight: 300;
     margin-top: -10%;
     padding-left: 3%;
     padding-right: 3%;
-}
-
-.step-box h1 {
+  }
+  
+  .step-box h1 {
     font-size: x-large;
-}
-
-.getinv {
+  }
+  
+  .getinv {
     padding-top: 6.5%;
-}
-
-.howinv {
+  }
+  
+  .howinv {
     background-color: limegreen;
     border-radius: 10px;
     color: white;
     width: 110%;
     border: 0;
     font-size: larger;
-}
-
-/* Adjustments for smaller screens */
-@media (max-width: 768px) {
+  }
+  
+  /* Animation */
+  @keyframes swing-in {
+    0% {
+      transform: rotate(-90deg) translateY(0%);
+      opacity: 0;
+    }
+    50% {
+      transform: rotate(15deg);
+      opacity: 0.5;
+    }
+    100% {
+      transform: rotate(0deg);
+      opacity: 1;
+    }
+  }
+  
+  .swing-in {
+    animation: swing-in 1s ease-out forwards;
+  }
+  
+  /* Adjustments for smaller screens */
+  @media (max-width: 768px) {
     .step-container {
-        flex-direction: row; /* Two boxes in each row */
-        gap: 10px; /* Reduced gap for smaller screens */
-        justify-content: flex-start; /* Left align */
-        margin-left: 2%;
+      flex-direction: row; /* Two boxes in each row */
+      gap: 10px; /* Reduced gap for smaller screens */
+      justify-content: flex-start; /* Left align */
+      margin-left: 2%;
     }
-
+  
     .step-box {
-        width: 55%; /* 50-60% width for each box */
-        margin: 0 auto;
-        box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.8);
-        margin-bottom: 20px; /* Space below each box */
+      width: 55%; /* 50-60% width for each box */
+      margin: 0 auto;
+      box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.8);
+      margin-bottom: 20px; /* Space below each box */
     }
-
+  
     .steps h1 {
-        font-size: 5vw; /* Responsive font size */
-        margin-bottom: 20px;
+      font-size: 5vw; /* Responsive font size */
+      margin-bottom: 20px;
     }
-}
-
-/* Adjustments for medium screens (tablets) */
-@media (min-width: 768px) and (max-width: 1024px) {
+  }
+  
+  /* Adjustments for medium screens (tablets) */
+  @media (min-width: 768px) and (max-width: 1024px) {
     .step-container {
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 20px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 20px;
     }
-    
+  
     .step-box {
-        width: calc(50% - 20px); /* Two boxes per row on tablets */
-        max-width: 45%;
+      width: calc(50% - 20px); /* Two boxes per row on tablets */
+      max-width: 45%;
     }
-}
-
-@media (max-width: 480px) {
+  }
+  
+  @media (max-width: 480px) {
     .steps {
-        padding-left: 5vw;
-        padding-top: 3%;
-        padding-bottom: 5%;
+      padding-left: 5vw;
+      padding-top: 3%;
+      padding-bottom: 5%;
     }
-
+  
     .step-box {
-        width: 55%; /* 50-60% width for mobile */
-        margin-left: 0; /* Left align */
+      width: 55%; /* 50-60% width for mobile */
+      margin-left: 0; /* Left align */
     }
-
+  
     .step-box img {
-        width: 80%; /* Adjust image size for mobile */
+      width: 80%; /* Adjust image size for mobile */
     }
-
+  
     .steps h1 {
-        font-size: 8vw;
+      font-size: 8vw;
     }
-
+  
     .step-box h1{
-        font-size: medium;
+      font-size: medium;
     }
     .howinv{
-        width: fit-content;
-        font-size: 4vw;
-        padding: 0.5vw;
-        margin-top: 1vw;
+      width: fit-content;
+      font-size: 4vw;
+      padding: 0.5vw;
+      margin-top: 1vw;
     }
-}
+  }
+  
