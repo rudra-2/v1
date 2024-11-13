@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import './Header.css';
-import 'R:/homemade/myreact/v1/src/fonts.css';
+import './fonts.css';
 
 const Header: React.FC = () => {
   const profileImages = [
