@@ -99,7 +99,7 @@
       flex-direction: row; /* Two boxes in each row */
       gap: 10px; /* Reduced gap for smaller screens */
       justify-content: flex-start; /* Left align */
-      margin-left: 2%;
+      margin-left: 0%;
     }
   
     .step-box {
@@ -125,7 +125,26 @@
   
     .step-box {
       width: calc(50% - 20px); /* Two boxes per row on tablets */
-      max-width: 45%;
+      max-width: 40%;
+    }
+  }
+
+  @media (min-width: 1024px) and (max-width: 1400px) {
+    .step-container {
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  
+    .step-box {
+      width: calc(50% - 20px); /* Two boxes per row on tablets */
+      max-width: 40%;
+    }
+  }
+  
+  @media (min-width: 1400px) {
+    .step-box {
+      width: 70%;
     }
   }
   
